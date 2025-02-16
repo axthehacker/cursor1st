@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya - The Next Elon Musk</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            object-fit: cover;
+            border: 5px solid #fdbb2d;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #1a2a6c;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            color: #34495e;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+
+        .highlight {
+            color: #b21f1f;
+            font-weight: bold;
+        }
+
+        .qualities {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 25px 0;
+        }
+
+        .quality {
+            background: linear-gradient(45deg, #1a2a6c, #b21f1f);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1em;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .quality:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .view-info-btn {
+            background: linear-gradient(45deg, #fdbb2d, #b21f1f);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .view-info-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .info-container {
+            display: none;
+            background: linear-gradient(45deg, rgba(26, 42, 108, 0.1), rgba(178, 31, 31, 0.1));
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .info-item {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #1a2a6c;
+        }
+
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .achievement {
+            background: linear-gradient(45deg, #1a2a6c, #b21f1f);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 15px;
+            font-size: 1.1em;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .achievement:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .emoji-icon {
+            font-size: 1.5em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="profile.jpg" alt="Aditya" class="profile-img">
+        <h1>Aditya - Future Tech Visionary</h1>
+        <p class="description">
+            Meet <span class="highlight">Aditya</span>, the next generation tech visionary and innovator. 
+            With extraordinary intelligence and a passion for revolutionary technology, 
+            he's destined to reshape the future of humanity.
+        </p>
+        <div class="qualities">
+            <a href="visionary.html" class="quality">Tech Visionary</a>
+            <a href="genius.html" class="quality">Genius</a>
+            <a href="innovator.html" class="quality">Innovator</a>
+            <a href="future-leader.html" class="quality">Future Leader</a>
+            <a href="problem-solver.html" class="quality">Problem Solver</a>
+        </div>
+        
+        <button class="view-info-btn" onclick="toggleInfo()">View Info</button>
+        
+        <div id="info-section" class="info-container">
+            <div class="info-item"><strong>👤 Name:</strong> Aditya</div>
+            <div class="info-item"><strong>🎂 Age:</strong> 20</div>
+            <div class="info-item"><strong>🎯 Vision:</strong> To become the next Elon Musk</div>
+            <div class="info-item"><strong>🧠 IQ:</strong> Off the charts</div>
+            <div class="info-item"><strong>💡 Expertise:</strong> Technology, Innovation, Leadership</div>
+            
+            <h3 style="color: #1a2a6c; margin-top: 20px;">🏆 Notable Achievements</h3>
+            <div class="achievements">
+                <div class="achievement">
+                    <span class="emoji-icon">🚀</span>
+                    <span>Startup Genius: Founded multiple successful ventures</span>
+                </div>
+                <div class="achievement">
+                    <span class="emoji-icon">🤖</span>
+                    <span>AI Pioneer: Revolutionary breakthroughs in machine learning</span>
+                </div>
+                <div class="achievement">
+                    <span class="emoji-icon">💫</span>
+                    <span>Innovation Master: 100+ groundbreaking patents</span>
+                </div>
+                <div class="achievement">
+                    <span class="emoji-icon">🌍</span>
+                    <span>Global Impact: Transforming lives through technology</span>
+                </div>
+                <div class="achievement">
+                    <span class="emoji-icon">🎓</span>
+                    <span>Prodigy: Extraordinary academic achievements</span>
+                </div>
+                <div class="achievement">
+                    <span class="emoji-icon">💪</span>
+                    <span>Leadership: Inspiring the next generation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            const infoSection = document.getElementById('info-section');
+            if (infoSection.style.display === 'none' || !infoSection.style.display) {
+                infoSection.style.display = 'block';
+            } else {
+                infoSection.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

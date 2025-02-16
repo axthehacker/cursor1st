@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya - Master Problem Solver</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #1a2a6c;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .solver-content {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .solver-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(45deg, rgba(26, 42, 108, 0.1), rgba(178, 31, 31, 0.1));
+            border-radius: 15px;
+        }
+
+        .highlight {
+            color: #b21f1f;
+            font-weight: bold;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #fdbb2d, #b21f1f);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .solution-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .solution-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #1a2a6c;
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            border-left: 5px solid #fdbb2d;
+            background-color: rgba(253, 187, 45, 0.1);
+        }
+
+        .process-steps {
+            counter-reset: step;
+            list-style: none;
+            padding: 0;
+        }
+
+        .process-steps li {
+            position: relative;
+            margin: 20px 0;
+            padding-left: 50px;
+            counter-increment: step;
+        }
+
+        .process-steps li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(45deg, #1a2a6c, #b21f1f);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Aditya: The Master Problem Solver</h1>
+            <p class="highlight">Turning Challenges into Opportunities</p>
+        </div>
+
+        <div class="solver-content">
+            <div class="solver-section">
+                <h2>Problem-Solving Approach</h2>
+                <p>Aditya's unique approach to problem-solving combines analytical thinking with creative innovation, allowing him to tackle complex challenges that others find insurmountable.</p>
+                
+                <div class="quote">
+                    "Every problem is an opportunity to create something extraordinary. The bigger the challenge, the more innovative the solution." - Aditya
+                </div>
+            </div>
+
+            <div class="solver-section">
+                <h2>Signature Problem-Solving Process</h2>
+                <ol class="process-steps">
+                    <li><strong>Deep Analysis:</strong> Understanding the core of the problem through comprehensive research</li>
+                    <li><strong>Innovation Thinking:</strong> Approaching challenges from multiple unique perspectives</li>
+                    <li><strong>Solution Design:</strong> Creating elegant, efficient, and scalable solutions</li>
+                    <li><strong>Implementation:</strong> Executing solutions with precision and adaptability</li>
+                    <li><strong>Optimization:</strong> Continuously improving and refining the solution</li>
+                </ol>
+            </div>
+
+            <div class="solver-section">
+                <h2>Notable Solutions</h2>
+                <div class="solution-grid">
+                    <div class="solution-card">
+                        <div class="solution-icon">🌍</div>
+                        <h3>Global Sustainability</h3>
+                        <p>Developed innovative solutions for renewable energy distribution and storage</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">🏥</div>
+                        <h3>Healthcare Innovation</h3>
+                        <p>Created AI-powered diagnostic tools for early disease detection</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">🚀</div>
+                        <h3>Space Technology</h3>
+                        <p>Designed breakthrough propulsion systems for space exploration</p>
+                    </div>
+                    <div class="solution-card">
+                        <div class="solution-icon">🤖</div>
+                        <h3>AI Ethics</h3>
+                        <p>Developed frameworks for ethical AI implementation in critical systems</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="solver-section">
+                <h2>Problem-Solving Skills</h2>
+                <ul>
+                    <li><strong>Analytical Thinking:</strong> Breaking down complex problems into manageable components</li>
+                    <li><strong>Creative Innovation:</strong> Finding unique solutions to challenging problems</li>
+                    <li><strong>Strategic Planning:</strong> Developing comprehensive roadmaps for implementation</li>
+                    <li><strong>Risk Management:</strong> Identifying and mitigating potential challenges</li>
+                    <li><strong>Cross-disciplinary Integration:</strong> Combining insights from multiple fields</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="back-btn">Back to Profile</a>
+        </div>
+    </div>
+</body>
+</html> 
